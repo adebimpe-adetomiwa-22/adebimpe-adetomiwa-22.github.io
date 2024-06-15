@@ -1,0 +1,75 @@
+@import "reset";
+@import "variables";
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #272727;
+}
+
+.nav {
+    width: 100vw;
+    height: 100vh;
+    background-color: $color;
+    transition: all 300ms ease-in-out;
+
+    &.cancel {
+        pointer-events: none;
+        transform: scale(0);
+    }
+
+    #nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        .nav-item.cancel-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            cursor: pointer;
+
+            div {
+                width: 2rem;
+                height: 0.3rem;
+                background-color: $background-color;
+                border-radius: 0.3rem;
+            }
+
+            div:last-child {
+                width: 1.5rem;
+            }
+        }
+
+        .nav-item {
+            list-style: none;
+            opacity: 0.7;
+            transition: all 200ms ease-out;
+
+            a {
+                text-decoration: none;
+                letter-spacing: 0.05rem;
+                color: $background-color;
+            }
+
+            &.active, &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+.header {
+    color: $color;
+}

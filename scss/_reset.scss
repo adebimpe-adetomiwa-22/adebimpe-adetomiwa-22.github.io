@@ -1,0 +1,16 @@
+@import "variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Calibri", sans-serif;
+}
+
+html {
+    font-size: $font-size;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
