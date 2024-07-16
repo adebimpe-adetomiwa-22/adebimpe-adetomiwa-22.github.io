@@ -21,6 +21,7 @@ const Project = ({ data }) => {
                 </div>
                 <div className="check-out-project mt-auto text-right">
                     <a
+                        target="_blank"
                         href={data.link}
                         className="bg-blue-700 text-blue-50 px-3 py-1 rounded-sm text-xs md:text-sm transition hover:opacity-80"
                     >
