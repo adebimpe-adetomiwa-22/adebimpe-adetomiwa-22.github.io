@@ -186,7 +186,7 @@
     }
 
     .project--texts {
-        @apply text-sm;
+        @apply text-sm mb-7;
     }
 
     .sub-title {
@@ -275,6 +275,8 @@
 
     .form-content.send {
         @apply bg-blue-700 text-blue-50 py-2 rounded-md flex justify-center items-center cursor-pointer transition-all duration-200;
+
+        @apply hover:opacity-80;
 
         @apply md:py-3;
         @apply lg:py-4;

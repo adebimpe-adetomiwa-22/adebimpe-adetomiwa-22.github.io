@@ -18,7 +18,7 @@ const Projects = () => {
             name: 'Todo App',
             description:
                 'The To-Do App is a sleek and user-friendly task management application designed to help users organize their daily tasks with ease. Built using React, React Router, and Tailwind CSS, this app combines modern design with essential functionality for efficient task management.',
-            link: '',
+            link: 'https://adebimpe-adetomiwa-22.github.io/todo-app',
             image: todoImage,
         },
     ]);
