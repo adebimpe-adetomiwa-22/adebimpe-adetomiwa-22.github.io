@@ -4,6 +4,7 @@ import Project from './Project';
 // images
 import calculatorImage from '../assets/images/calculator.jpg';
 import todoImage from '../assets/images/todo.jpg';
+import { Fade } from 'react-awesome-reveal';
 
 const Projects = () => {
     const [projects, setProjects] = useState([
@@ -23,7 +24,9 @@ const Projects = () => {
         },
     ]);
     const projectsElements = projects.map((element, index) => (
-        <Project key={index} data={element} />
+        <Fade key={index} fraction={0.3}>
+            <Project key={index} data={element} />
+        </Fade>
     ));
 
     return (
