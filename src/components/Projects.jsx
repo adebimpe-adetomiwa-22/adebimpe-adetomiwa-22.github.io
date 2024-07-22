@@ -4,10 +4,18 @@ import Project from './Project';
 // images
 import calculatorImage from '../assets/images/calculator.jpg';
 import todoImage from '../assets/images/todo.jpg';
+import tenziesImage from '../assets/images/tenzies.jpg';
 import { Fade } from 'react-awesome-reveal';
 
 const Projects = () => {
     const [projects, setProjects] = useState([
+        {
+            name: 'Tenzies Game',
+            description:
+                'The Tenzies game is a fun and interactive dice game built using modern web development technologies. It offers a delightful user experience with its simple yet engaging gameplay mechanics. This project demonstrates proficiency in front-end development, particularly with HTML, CSS, JavaScript, React, and Tailwind CSS.',
+            link: 'https://adebimpe-adetomiwa-22.github.io/tenzies-game',
+            image: tenziesImage,
+        },
         {
             name: 'Windows 10 Calculator Lite',
             description:
