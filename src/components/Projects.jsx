@@ -5,10 +5,18 @@ import Project from './Project';
 import calculatorImage from '../assets/images/calculator.jpg';
 import todoImage from '../assets/images/todo.jpg';
 import tenziesImage from '../assets/images/tenzies.jpg';
+import anywearsImage from '../assets/images/anywears.jpg';
 import { Fade } from 'react-awesome-reveal';
 
 const Projects = () => {
     const [projects, setProjects] = useState([
+        {
+            name: 'AnyWears - E-Commerce Web Application',
+            description:
+                'AnyWears is a modern e-commerce web application designed to showcase the latest in fashion and accessories. Built with React, Redux Toolkit, Tailwind CSS, and Material UI, AnyWears offers a sleek and responsive user interface that ensures a seamless shopping experience across all devices. The project utilizes the Fakestore API to simulate product listings, a shopping cart, and a checkout process, making it an ideal demonstration of a functional online store without real transactions.',
+            link: 'https://adebimpe-adetomiwa-22.github.io/anywears',
+            image: anywearsImage,
+        },
         {
             name: 'Tenzies Game',
             description:
@@ -38,13 +46,13 @@ const Projects = () => {
     ));
 
     return (
-        <section className="projects m-cover" id="projects">
-            <div className="container">
-                <div className="projects--title">
-                    <h2 className="m-title">MY PROJECTS</h2>
+        <section className='projects m-cover' id='projects'>
+            <div className='container'>
+                <div className='projects--title'>
+                    <h2 className='m-title'>MY PROJECTS</h2>
                 </div>
 
-                <div className="all-projects">
+                <div className='all-projects'>
                     {/* {<Project />} */}
                     {projectsElements}
                 </div>
